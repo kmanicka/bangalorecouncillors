@@ -1,0 +1,30 @@
+<view title="contact.Name">
+  <content has-header="true" padding="true">
+  	
+
+	<div class="list card">
+
+	 <a class="item item-icon-right" href="http://maps.google.com/maps?q={{ getWard() }}">
+	    <i class="icon ion-ios7-location positive"></i>
+	    <h2>{{contact.WardName}}, {{contact.AssemblyConstituency}}</h2>
+	  </a>
+
+	  <a class="item item-icon-right" href="tel:+91{{ contact.PhoneNumber }}">
+	    <i class="icon ion-ios7-telephone positive"></i>
+	    +91 {{ contact.PhoneNumber }}
+	  </a>
+
+	  <a class="item item-icon-right" ng-click="addToContacts()">
+	    <i class="icon ion-plus positive"></i>
+	    Add to Contacts
+	  </a>
+
+	  <div class="item item-image">
+	    <img src="{{ contact.Photo }}">
+	  </div>
+
+
+	</div>
+
+  </content>
+</view>
